@@ -1,6 +1,6 @@
 # Ruby
 
-Build Ruby with OpenSSL 3.2
+Ruby with OpenSSL 3.2
 
 ## Tags
 
