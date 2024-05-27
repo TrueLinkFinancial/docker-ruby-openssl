@@ -67,8 +67,8 @@ RUN wget https://www.openssl.org/source/openssl-3.2.0.tar.gz \
 
 # Set OpenSSL path
 ENV PATH="/usr/local/openssl/bin:$PATH"
-ENV LD_LIBRARY_PATH="/usr/local/openssl/lib:$LD_LIBRARY_PATH"
-ENV PKG_CONFIG_PATH="/usr/local/openssl/lib/pkgconfig:$PKG_CONFIG_PATH"
+ENV LD_LIBRARY_PATH="/usr/local/openssl/lib64:$LD_LIBRARY_PATH"
+ENV PKG_CONFIG_PATH="/usr/local/openssl/lib64/pkgconfig:$PKG_CONFIG_PATH"
 
 # Build Ruby 3.1.4 with OpenSSL 3.2
 RUN wget https://cache.ruby-lang.org/pub/ruby/3.1/ruby-3.1.4.tar.gz \
