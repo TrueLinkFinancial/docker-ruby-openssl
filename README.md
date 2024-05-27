@@ -8,7 +8,8 @@ Tags are named after Ruby version.
 
 Images can be found at:
 
-* [Docker hub](https://hub.docker.com/r/dockerteamtruelink/ruby-openssl): `dockerteamtruelink/ruby-openssl`  
+* [Docker hub](https://hub.docker.com/r/dockerteamtruelink/ruby-openssl): `dockerteamtruelink/ruby-openssl`
+* Current image built with `docker buildx build --platform linux/amd64  -t dockerteamtruelink/ruby-openssl:3.1.4 --push .`
 
 ## Dockerfile
 
