@@ -1,4 +1,4 @@
-FROM debian:12.5-slim
+FROM ubuntu:22.04 AS base_image
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
 		imagemagick \
     libbz2-dev \
 		libc6-dev \
-    libcurl4-gnutls-dev \
+    libcurl4-openssl-dev \
     libdb-dev \
     libevent-dev \
     libffi-dev \
@@ -27,12 +27,14 @@ RUN apt-get update && apt-get install -y \
     libgmp10 \
     libjpeg-dev \
 		libkrb5-dev \
+    libmysqlclient-dev \
     liblzma-dev \
     libmagickcore-dev \
 		libmagickwand-dev \
 		libmaxminddb-dev \
     libncurses5-dev \
     libncursesw5-dev \
+    libnss3-dev \
     libpng-dev \
 		libpq-dev \
     libreadline-dev \
@@ -43,6 +45,7 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     libxslt1-dev \
     libyaml-dev \
+    llvm \
     make \
     patch \
     pkg-config \
